@@ -3,17 +3,17 @@
   "name": "Lyrics Finder App",
   "icons": [
     {
-      "src": "i2i-icon.ico",
+      "src": "%PUBLIC_URL%/i2i-icon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "image/i2i-systems-logo.png",
+      "src": "%PUBLIC_URL%/image/i2i-systems-logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "%PUBLIC_URL%/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
