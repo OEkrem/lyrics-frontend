@@ -6,6 +6,7 @@ export default function Footer() {
 
     <footer className="bg-light py-4 mt-5 border-top">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        
         {/* Sol Taraf - Şirket İkonu ve İsmi */}
         <NavLink to="/" className="d-flex align-items-center text-decoration-none text-dark mb-3 mb-md-0">
           <img src="/image/i2i-systems-logo.png" alt="Company Logo" width="40" height="25" className="me-2" />
@@ -15,19 +16,13 @@ export default function Footer() {
         {/* Orta - Sayfa Linkleri */}
         <ul className="nav justify-content-center mb-3 mb-md-0">
           <li className="nav-item">
-            <NavLink className="nav-link text-dark" to="/">Home</NavLink>
+            <NavLink className="nav-link text-dark" to="/">Anasayfa</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark" to="/">Lyrics</NavLink>
+            <NavLink className="nav-link text-dark" to="/">Hakkımızda</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-dark" to="/">Artists</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link text-dark" to="/">About Us</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link text-dark" to="/">Contact</NavLink>
+            <NavLink className="nav-link text-dark" to="/">İletişim</NavLink>
           </li>
         </ul>
 
