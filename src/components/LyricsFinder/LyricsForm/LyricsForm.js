@@ -2,14 +2,17 @@
 import React, { useState } from 'react';
 import './lyricsForm.css';
 
-export default function LyricsForm({ onSearch }) {
+export default function LyricsForm({ onSearch, setToast }) {
   const [artist, setArtist] = useState('');
   const [title, setTitle] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (artist && title) {
-      onSearch(artist, title); // Üst bileşene sanatçı ve şarkı adını ilet
+      onSearch(artist, title);
+      setToast({ type: 'info', message: `"${artist} - ${title}" şarkı sözleri aranıyor...`});
+    }else{
+      setToast({type: 'error', message: 'Lütfen sanatçı ve şarkı adı giriniz.'});
     }
   };
 
