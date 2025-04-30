@@ -1,0 +1,103 @@
+
+
+.lyrics-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /*width: 100%;*/
+    margin-bottom: 15px;
+}
+
+.lyrics-form .row input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.lyrics-form .row label{
+    flex: .8;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.lyrics-button{
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.lyrics-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.009);
+}
+
+.lyrics-button:active {
+    background-color: #003f7f;
+    transform: scale(0.991);
+}
+
+
+.onerilenler{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.onerilenler p{
+    flex: 1;
+}
+
+.onerilenler-list{
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.onerilenler-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4e96e2;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  
+  .onerilenler-item:hover {
+    transform: translateY(-2px) scale(1.01);
+  }
