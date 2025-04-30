@@ -11,16 +11,15 @@ export default function LyricsFinder() {
 
   const handleSearch = async (artist, title) => {
     setLyrics('');
+    setToast(null);
 
-    try {
-      const fetchedLyrics = await fetchLyrics(artist, title);
-      if (fetchedLyrics) {
-        setLyrics(fetchedLyrics);
-      } else {
-        setToast({type: 'error', message: 'Şarkı sözü bulunamadı. Lütfen başka bir şarkı deneyin.'});
-      }
-    } catch (err) {
-      setToast({type: 'error', message: 'Bir hata oluştu. Lütfen daha sonra tekrar deneyin.'});
+    const result = await fetchLyrics(artist, title);
+    if (result === "Şarkı sözleri bulunamadı.") {
+      setToast({ type: 'error', message: result });
+    } else if (result === "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.") {
+      setToast({ type: 'error', message: result });
+    } else {
+      setLyrics(result);
     }
   };
 

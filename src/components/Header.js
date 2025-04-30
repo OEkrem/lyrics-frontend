@@ -10,7 +10,7 @@ export default function Header() {
 
         {/* Sol Kısım - Logo */}
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
-          <img src="/image/i2i-systems-logo.png" alt="Company Logo" width="275" height="135" className="me-2" />
+          <img src={`${process.env.PUBLIC_URL}/image/i2i-systems-logo.png`} alt="Company Logo" width="275" height="135" className="me-2" />
           <span className="fw-bold">i2i Systems</span>
         </NavLink>
 

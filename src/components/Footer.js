@@ -9,7 +9,7 @@ export default function Footer() {
         
         {/* Sol Taraf - Şirket İkonu ve İsmi */}
         <NavLink to="/" className="d-flex align-items-center text-decoration-none text-dark mb-3 mb-md-0">
-          <img src="/image/i2i-systems-logo.png" alt="Company Logo" width="40" height="25" className="me-2" />
+          <img src={`${process.env.PUBLIC_URL}/image/i2i-systems-logo.png`} alt="Company Logo" width="40" height="25" className="me-2" />
           <span className="fw-bold">i2i Systems</span>
         </NavLink>
 
