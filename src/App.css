@@ -1,1 +1,29 @@
 
+
+.dark-mode{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.light-mode{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    padding: 20px 0;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dark-mode main{
+    background-color: #37374767;  /* dark mode için ideal */
+}
+.light-mode main{
+    background-color: white;
+}
+

@@ -1,28 +1,32 @@
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import { FaMoon, FaSun } from "react-icons/fa";
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 
 export default function Header() {
 
+  const { darkMode, toggleMode } = useContext(ThemeContext);
+
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+    <nav className={darkMode ? "dark-mode" : "light-mode"}>
+      <div className="nav-container">
 
         {/* Sol Kısım - Logo */}
-        <NavLink className="navbar-brand d-flex align-items-center" to="/">
+        <NavLink className="leftside" to="/">
           <img src={`${process.env.PUBLIC_URL}/image/i2i-systems-logo.png`} alt="Company Logo" width="275" height="135" className="me-2" />
-          <span className="fw-bold">i2i Systems</span>
+          <span className="companyName hover">i2i Systems</span>
         </NavLink>
 
 
         {/* Sağ Kısım - Menü */}
-        <div className="collapse navbar-collapse justify-content-center">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">Anasayfa</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/">İletişim</NavLink>
+        <div className="rightside">
+          <ul>
+            <li>
+              <NavLink className="navbar-a hover" to="/" onClick={toggleMode}>
+              {darkMode ? <FaSun /> : <FaMoon />}
+              </NavLink>
             </li>
           </ul>
         </div>

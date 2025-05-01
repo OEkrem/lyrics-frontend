@@ -49,3 +49,11 @@
       opacity: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    .toast-containerr {
+      width: 90%;
+      left: 5%;
+      top: 10px;
+    }
+  }

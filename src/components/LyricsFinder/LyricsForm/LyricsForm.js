@@ -1,10 +1,13 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './lyricsForm.css';
+import { ThemeContext } from '../../../context/ThemeContext';
 
 export default function LyricsForm({ onSearch, setToast }) {
   const [artist, setArtist] = useState('');
   const [title, setTitle] = useState('');
+
+  const {darkMode} = useContext(ThemeContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,8 +25,7 @@ export default function LyricsForm({ onSearch, setToast }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="lyrics-form">
-      
+    <form onSubmit={handleSubmit} className= {darkMode ? "lyrics-form dark-mode" : "lyrics-form light-mode"}>
       <div className='column'>
         <div className="row">
           <label htmlFor="artist" className="lyrics-label">Sanatçı:</label>

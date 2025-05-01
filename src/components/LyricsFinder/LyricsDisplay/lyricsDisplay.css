@@ -1,0 +1,39 @@
+
+
+.lyrics-display-container{
+    width: 85%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.lyrics-display-container .baslik{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.lyrics-display-container .sozler{
+    border: 1 px solid #000;
+    width: 100%;
+    overflow-x: scroll;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .lyrics-display-container{
+        flex-direction: column;
+        height: 55vh;
+    }
+    .lyrics-display-container .sozler{
+        overflow-x: scroll;
+    }
+    
+}

@@ -37,8 +37,11 @@ export default function LyricsFinder() {
             
         {/* Şarkı Sözü Bulucu Başlığı */}
         <h1 className="baslik">Şarkı Sözü Bulucu</h1>
-        <LyricsForm onSearch={handleSearch} setToast={setToast} />
-        <LyricsDisplay lyrics={lyrics}/>
+        <div className='govde'>
+          <LyricsForm onSearch={handleSearch} setToast={setToast} />
+          <LyricsDisplay lyrics={lyrics}/>
+        </div>
+       
 
     </div>
   );
