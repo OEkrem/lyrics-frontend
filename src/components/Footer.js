@@ -25,10 +25,10 @@ export default function Footer() {
             <NavLink className= {darkMode ? "nav-link text-light" : "nav-link text-dark"} to="/">Anasayfa</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className={darkMode ? "nav-link text-light" : "nav-link text-dark"} to="/">Hakkımızda</NavLink>
+            <NavLink className={darkMode ? "nav-link text-light" : "nav-link text-dark"} to="https://onurekremyildirim.com/Home/Portfoy">Hakkımda</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className={darkMode ? "nav-link text-light" : "nav-link text-dark"} to="/">İletişim</NavLink>
+            <NavLink className={darkMode ? "nav-link text-light" : "nav-link text-dark"} to="https://onurekremyildirim.com/Home/Iletisim">İletişim</NavLink>
           </li>
         </ul>
 
