@@ -10,6 +10,7 @@ Bu proje, kullanıcıların sanatçı ve şarkı adı girerek şarkı sözlerini
 src/
 ├── api/             # Backend ile iletişim kuran Axios bileşenleri
 ├── components/      # Uygulama içerisinde kullanılan bileşenler
+├── context/         # Tema kontekstini içerir
 ├── layouts/         # Sayfa şablonlarını barındırır
 └── pages/           # Kullanıcıya sunulan sayfalar
 ```
@@ -53,6 +54,8 @@ Projeyi [buradan](https://oekrem.github.io/lyrics-frontend/) inceleyebilirsiniz.
 - **Toast Mesajları**: Kullanıcıya işlem durumu hakkında geri bildirim sağlayın.
 - **Önerilen Şarkılar**: Hızlı seçim için önerilen şarkılar listesi.
 - **Responsive Tasarım**: Mobil ve masaüstü cihazlarla uyumlu.
+- **Yukarı çıkma butonu**: Şarkıları dinlediğinizde kolaylıkla sayfa başına gelinebilir.
+- **Tema rengi değiştirme**: Arayüzümüzde koyu ve açık renk terchileri bulunmaktadır.
 
 ---
 
