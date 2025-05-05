@@ -11,13 +11,14 @@
 }
 
 main{
-    padding: 20px 0;
-    width: 100vw;
-    overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
+    height: 82vh;
+    padding: 20px 0;
+    overflow-x: hidden;
 }
 
 .dark-mode main{
