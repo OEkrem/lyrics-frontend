@@ -8,9 +8,7 @@ export default function Home() {
 
   return (
     <MainLayout>
-      <div>
         <LyricsFinder/>
-      </div>
     </MainLayout>
   )
 }

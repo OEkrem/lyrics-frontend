@@ -21,8 +21,9 @@ main{
 }
 
 .dark-mode main{
-    background-color: #37374767;  /* dark mode için ideal */
+    background-color: #37374767;
 }
+
 .light-mode main{
     background-color: white;
 }

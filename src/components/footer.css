@@ -1,0 +1,143 @@
+/* Genel Footer Stilleri */
+.footer {
+    position: fixed; /* Footer'ı sabitle */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    z-index: 1000;
+  }
+  
+  .footer-dark {
+    background-color: #1e1e2f; /* Header ile uyumlu */
+    color: #e0e0e0;
+  }
+  
+  .footer-light {
+    background-color: #f5f5f5; /* Header ile uyumlu */
+    color: #1e1e2f;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Mobil cihazlar için satır kaydırma */
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Mobil cihazlar için boşluk */
+  }
+  
+  .footer-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .footer-logo-img {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  .footer-logo-text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Mobil cihazlar için satır kaydırma */
+  }
+  
+  .footer-nav-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav-link:hover {
+    color: #007bff;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px; /* Mobil cihazlar için boşluk */
+  }
+  
+  .footer-social-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+  }
+  
+  .footer-social-link:hover {
+    color: #007bff;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .footer{
+      position: static;
+    }
+    .footer-container {
+      flex-direction: column; /* Mobil cihazlar için dikey düzen */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-nav {
+      justify-content: center;
+      gap: 10px; /* Daha küçük boşluk */
+    }
+  
+    .footer-social {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .footer-logo {
+      margin-bottom: 15px; /* Mobil cihazlar için daha fazla boşluk */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer{
+        position: static;
+    }
+    .footer-logo-img {
+      width: 30px; /* Daha küçük logo */
+      height: 20px;
+    }
+  
+    .footer-logo-text {
+      font-size: 14px; /* Daha küçük yazı boyutu */
+    }
+  
+    .footer-nav-link {
+      font-size: 12px; /* Daha küçük yazı boyutu */
+    }
+  
+    .footer-copyright {
+      font-size: 10px; /* Daha küçük yazı boyutu */
+    }
+  }

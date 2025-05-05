@@ -31,12 +31,10 @@ export default function LyricsFinder() {
             <Toast
             type={toast.type}
             message={toast.message}
-            onClose={() => setToast(null)} // Toast kapatıldığında state'i temizle
+            onClose={() => setToast(null)}
             />
         )}
             
-        {/* Şarkı Sözü Bulucu Başlığı */}
-        <h1 className="baslik">Şarkı Sözü Bulucu</h1>
         <div className='govde'>
           <LyricsForm onSearch={handleSearch} setToast={setToast} />
           <LyricsDisplay lyrics={lyrics}/>

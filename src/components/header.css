@@ -1,94 +1,138 @@
-
-.dark-mode{
-    background-color: #1e1e2f;  /* dark mode için ideal */
+/* Genel Temalar */
+.dark-mode {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
     color: #e0e0e0;
-}
-.light-mode{
-    background-color: #f5f5f5;
-    color: #1e1e2f; 
-}
-
-nav{
+  }
+  
+  .light-mode {
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    color: #1e1e2f;
+  }
+  
+  nav {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
-}
-
-nav .nav-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px;
-}
-
-nav .nav-container .leftside{ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-container {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    color: inherit;
+    padding: 15px 30px;
+  }
+  
+  .leftside {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     text-decoration: none;
-}
-
-nav .nav-container .leftside img{
+    color: inherit;
+  }
+  
+  .leftside .logo {
+    height: 50px;
     width: auto;
-    height: 30px;
     object-fit: contain;
-    margin-right: 10px;
-}
-
-nav .nav-container .leftside .companyName{
-  display: none;
-  color: inherit;
-  text-decoration: none;
-  font-size: 24px;
-  margin: 0;
-}
-
-nav .nav-container .rightside{
+  }
+  
+  .leftside .companyName {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .rightside {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-nav .nav-container .rightside ul{
+  }
+  
+  .rightside ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav .nav-container .rightside ul li{
-    margin: 0 10px;
-}
-
-nav .nav-container .rightside ul li a{
+  }
+  
+  .rightside ul li {
+    margin: 0 15px;
+  }
+  
+  .rightside ul li .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
     color: inherit;
     font-size: 18px;
-}
-
-.hover:hover{
-    color: #3f3f5a;
-}
-
-@media (min-width: 768px) {
-    nav .nav-container .leftside .companyName{
-      display: flex;
-      color: inherit;
-      text-decoration: none;
-      font-size: 24px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .rightside ul li .menu-item:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  .rightside ul li .menu-icon {
+    font-size: 20px;
+  }
+  
+  .rightside ul li .theme-toggle-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .rightside ul li .theme-toggle-btn:hover {
+    color: #007bff;
+    transform: rotate(20deg);
+  }
+  
+  /* Responsive Tasarım */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
     }
-    nav .nav-container .leftside img{
-        width: 150px;
-        height: auto;
-        display: block;
+  
+    .rightside ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
     }
-    nav .nav-container .rightside ul li a{
-        font-size: 16px;
+  
+    .leftside .logo {
+      height: 40px;
     }
-}
+  
+    .leftside .companyName {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .leftside .logo {
+      height: 35px;
+    }
+  
+    .leftside .companyName {
+      font-size: 18px;
+    }
+  
+    .rightside ul li .menu-item {
+      font-size: 16px;
+    }
+  
+    .rightside ul li .theme-toggle-btn {
+      font-size: 20px;
+    }
+  }
